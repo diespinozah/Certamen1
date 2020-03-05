@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDC6AE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="86dp">
+
+
+        <TextView
+            android:id="@+id/txt_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:text="@string/numero1"/>
+
+        <TextView
+            android:id="@+id/txt_simbolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:textSize="34sp"
+            android:text="@string/simbolo"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txt_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:layout_weight="1"
+            android:text="@string/numero2"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="66dp">
+
+
+        <Button
+            android:id="@+id/btn_random"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#F57B51"
+            android:text="@string/boton1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="69dp">
+
+        <Button
+            android:id="@+id/btn_suma"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="#EE6352"
+            android:text="@string/suma"
+
+            android:textSize="40sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_resta"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#59CD90"
+            android:text="@string/resta"
+            android:textSize="40dp">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_c"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
+            android:background="#3Fa7D6"
+            android:text="@string/c"
+
+            android:textSize="40dp">
+
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:layout_editor_absoluteX="119dp">
+
+        <Button
+
+            android:id="@+id/btn_multiplicacion"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FAC05E"
+            android:text="@string/multiplicacion"
+            android:textSize="40dp">
+
+        </Button>
+
+        <Button
+
+            android:id="@+id/btn_division"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#F79D84"
+            android:text="@string/division"
+            android:textSize="40dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="112dp">
+
+        <Button
+            android:id="@+id/btn_par"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#85CB33"
+            android:text="@string/par"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="94dp">
+
+        <Button
+            android:id="@+id/btn_primo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#725AC1"
+            android:text="@string/primo"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp">
+
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/txt_generico"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D81E5B"
+            android:text="@string/resultado"
+            android:textAlignment="center"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#58355E"
+            android:text="@string/numeroResultado"
+            android:textAlignment="center"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_parprimo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D81E5B"
+            android:text="@string/primopar"
+            android:textAlignment="center"
+            android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
